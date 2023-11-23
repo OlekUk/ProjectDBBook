@@ -9,13 +9,13 @@ import org.junit.runner.RunWith;
 
         plugin = {
                 "html:target/cucumber-report.html",
-                "rerun:target/rerun.txt" ,
+                "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
-        features = "src/test/resources/features" ,
-        glue = "com/library/steps",
+        features = "src/test/resources/features",
+        glue = "library/steps",
         dryRun = false,
-        tags = "@us08"
+        tags = "@us01"
 )
 public class CukesRunner {
 
