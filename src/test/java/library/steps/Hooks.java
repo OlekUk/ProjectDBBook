@@ -4,6 +4,7 @@ package library.steps;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import library.utility.BrowserUtil;
 import library.utility.ConfigurationReader;
 import library.utility.DB_Util;
 import library.utility.Driver;
@@ -15,7 +16,9 @@ public class Hooks {
     @Before("@ui")
     public void setUp(){
         System.out.println("this is coming from BEFORE");
+        BrowserUtil.waitFor(3);
         Driver.getDriver().get(ConfigurationReader.getProperty("library_url"));
+        BrowserUtil.waitFor(3);
 
     }
 
