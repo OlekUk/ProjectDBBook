@@ -13,9 +13,11 @@ public class LibraryPage {
     }
 
 
-
     @FindBy(xpath = "//div//h2[@id='borrowed_books']")
     public WebElement countOfBorrowedBooks;
+
+}
+
 
 
 
