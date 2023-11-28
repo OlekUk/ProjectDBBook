@@ -90,10 +90,12 @@ public class BrowserUtil {
      * @param timeToWaitInSec
      * @return
      */
-    public static WebElement waitForVisibility(WebElement element, int timeToWaitInSec) {
+  /*  public static WebElement waitForVisibility(WebElement element, int timeToWaitInSec) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), timeToWaitInSec);
         return wait.until(ExpectedConditions.visibilityOf(element));
     }
+
+   */
 
     /**
      * Waits for element matching the locator to be visible on the page
